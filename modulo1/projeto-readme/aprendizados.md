@@ -1,0 +1,2 @@
+# Aprendizados da semana
+Nessa semana eu aprendi sobre como utilizar o terminal , git e gitbash.Além disso vários comandos foram praticados através de atividades, que por sinal foram muito divertidas, em especial o **mistério** do assassinato.Também foi muito interessante a aula de sexta feira (hoje) pois a turma recebeu várias dicas e conselhos sobre como lidar com a rotina do curso.
