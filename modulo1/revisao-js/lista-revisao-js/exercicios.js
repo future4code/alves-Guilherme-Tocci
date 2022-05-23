@@ -31,11 +31,13 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
+    return array.filter((valor)=>{if(valor%2===0)return valor}).map((valor)=>valor**2)}
  
-}
+
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
+    
   
 }
 
