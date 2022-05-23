@@ -72,12 +72,12 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-    let nPares = []
+    let numerosPares = []
      for (let i = 0 ;i <=2*(n-1) ; i++)
         if (i%2===0){
-            nPares.push(i)
+            numerosPares.push(i)
         }
-        return nPares
+        return numerosPares
 
    
 }
@@ -89,8 +89,12 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
+        array.sort((a, b) => a - b)
+        let arraySegundoMenor = [array[array.length - 2], array[1]]
+        return arraySegundoMenor
+      }
   
-}
+
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
