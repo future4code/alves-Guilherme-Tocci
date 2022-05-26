@@ -14,6 +14,7 @@ h2 {
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
+    
 }
 
 input {
@@ -74,11 +75,18 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding-top: 50px;
+    
+   
+    
+    
 }
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    
 }
+
 
 #container-para-comprar {
     background-color: #e7eb90;
