@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container{
+    background-color: white;
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+#perfil{
+    width: 325px;
+    border-radius: 50%;
+    padding: 100px 0px 100px 0px;
+    margin-left: 20px;
+    
+      
+}
+
+#gui{
+    font-size: 50px;
+    
+}
+#profissao{
+    font-size:20px;
+    color: rgb(26, 130, 130);
+    
+}
+#cabecario{
+    display: flex;
+    color: rgba(0, 0, 0, 0.686);
+}
+#paginas{
+    display: flex;
+    margin: 62px 0px 0px 100px;
+}
+#paginas>p{
+    padding: 0px 32px 0px 3px;
+    font-size: 20px;
+}
+.curriculo{
+    width: 200px;
+    margin-left: 10px;
+    
+}
+#resumo{
+    display: flex;
+    background-color: #E9E5E4;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.218);
+    color: rgba(0, 0, 0, 0.694);
+}
+#imagem1>p{
+    font-size:20px;
+    padding-right: 20px;
+    
+}
+#imagem1>h1{
+    padding: 75px 0px 0px 53px;
+    font-size: 50px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#imagem1>h2{
+    padding-left: 50px;
+    font-size: 35px;
+}
+#homehover:hover{
+    color: rgb(26, 130, 130);
+    
+    
+}
+#curriculohover:hover{
+    color: rgb(26, 130, 130);
+}
+#projetoshover:hover{
+    color: rgb(26, 130, 130);
+}
+#contatoshover:hover{
+    color: rgb(26, 130, 130);
+}
+.butao{
+    color: #FCFCFC;
+    background-color: #1BA99C;
+    border-radius: 50%;
+    border: none;
+    width: 150px;
+   height: 150px;
+   margin: 20px 20px 20px 20px;
+   font-size: 25px;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16)
+   
+}
+.butao:hover{
+    background-color: rgb(26, 130, 130);
+}
+.butao:active{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+    margin: 22px 20px 22px 20px;
+    
+    
+}
