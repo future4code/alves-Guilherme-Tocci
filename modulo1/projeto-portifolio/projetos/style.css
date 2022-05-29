@@ -15,6 +15,7 @@
 }
 body{
     max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 header{
     max-width: 100%;
@@ -70,44 +71,7 @@ header{
     
 
 }
-.bloco>img{
-    width: 250px;
-    margin: 15px 0;
-}
-#botaoTeste{
-    height: 35px;
-    width: 100px;
-    background-color:#380876;
-    color: white;
-    border-radius: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 50px;
-    
-}
 
-
-
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #380876;
-    margin: 30px 0px 0px 0px;
-}
-nav{
-    background-color:#ffffff;
-    color: #505050;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
-    border-radius:5px ;   
-}
-nav>h1{
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-size: 21px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 #guilhermeTocci>h1{
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -132,46 +96,45 @@ nav>h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 12px 0px 90px 0px;
     text-align: justify;
+    text-align: center;
     line-height: 30px;
     background-color: rgb(230, 235, 234);
-    width: 50%;
+    width: 30%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 18%); 
 }
+picture>h3{
+    text-align: center;
+    font-size:25px ;
+    margin-top: 2%;
 
+}
+main{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+main button{
+    background-color: #380876;
+    color: #ffffff;
+    padding: 0.25%  
+}
+button:hover{
+    background-color:#9a60e7 ;
+
+}
 picture>img{
-    width: 50px;
-
+    margin: 1%;
 }
-footer{
-    padding: 12px 0px 90px 0px;
-    text-align: center;
-    line-height: 80px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-}
-#icones{
+main>p{
+    width: 25%;
     margin: auto;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    
 }
-.imgsSocial{
-    width: 100px;
-    margin: auto;
-    
-    
-}
-#redesSociais{
-    width: 100%;
-    
-}
-#botaoTeste:hover{
-    background-color: #9a60e7;
- 
 
 
-}
+
+
+
+
 
