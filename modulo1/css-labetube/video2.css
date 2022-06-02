@@ -68,3 +68,56 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+@media screen  and (max-width:480px) {
+    
+    body{
+        width: 100%;
+        
+    }
+    #gridheader{
+        display: grid;
+        grid-template-columns: 45% 54%;
+    }
+    header{
+        background-color: rgb(36, 153, 114);
+    border: black solid;
+    padding-bottom: 2%;
+    margin-top: -1.7%;
+    margin-bottom: -1%;
+    margin-left: -2%;
+    }
+    input{
+        width: 100px;
+        padding-bottom: 1%;
+        padding-right: 1%;
+        text-align:start;  
+        border: black  solid;
+        font-size: 15px;  
+    }
+   .iconeProcura{
+    margin-right: 15%;
+   }
+    main {
+        margin-right: -1%;
+    margin-left: -1%;
+    
+    
+    }
+    .videos{
+        width: 318%;
+        margin-top: 12%;
+        margin-right: 4%;
+        margin-left: 4%;
+        border: none;
+        
+        }
+        footer{
+            margin: 0% -1% 0% -1%;
+            
+            }
+    video{
+        width: 28%;
+    }
+    
+}
