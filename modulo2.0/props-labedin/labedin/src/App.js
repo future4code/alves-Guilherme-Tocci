@@ -24,13 +24,15 @@ function App() {
       </div>
       <div className="page-section-container">
       <CardPequeno
-          imagem=" "
+          imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb27t3Hf6TiN35Na5CF1oGwPsdKPGeGoofTw&usqp=CAU"
+          categoria="Email :"
           informacao="gt-267@hotmail.com"
           
         />
         
         <CardPequeno
-          imagem=" "
+          imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9ZYG4CfRGkaOgkJT-a_2rKeivl8tWrY3xjg&usqp=CAU "
+          categoria="Endereço :"
           informacao="Brasil,Brasília-DF/Taguatinga, rua 06 chácara 267 casa 16A"
           
         />

@@ -1,5 +1,4 @@
 import React from 'react';
-import './CardPequeno.css';
 import styled from 'styled-components';
 
 const ContainerPequeno = styled.div`
@@ -8,17 +7,24 @@ const ContainerPequeno = styled.div`
     border: 1px solid black;
     padding: 20px 10px;
     margin-bottom: 10px;
-    height: 200px;
+    height: 100px;
+`
+const ImagemPequena = styled.img`
+width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
 `
 
 function CardPequeno(props){
     return(
-        <div className='smallcard-container '>
-            <img src={props.imagem}/>
-            <div>             
+        <ContainerPequeno>
+            <ImagemPequena src={props.imagem}/>
+            <div>
+                <h4>{props.categoria}</h4>             
                 <p>{props.informacao}</p>
+
             </div>
-        </div>
+        </ContainerPequeno>
 
         
     )
