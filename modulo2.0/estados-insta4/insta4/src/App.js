@@ -9,24 +9,39 @@ const MainContainer = styled.div`
   align-items: center;
 `
 
-class App extends React.Component {
+class App extends React.Component {  
+  state = {
+    pessoas: [
+      {
+        nomeUsuario:"Rick",
+        fotoUsuario:"https://picsum.photos/50/50",
+        fotoPost:"https://picsum.photos/200/150"
+      },
+      {
+        nomeUsuario:"Guilherme",
+        fotoUsuario:"https://picsum.photos/50/50",
+        fotoPost:"https://picsum.photos/200/150"
+      },
+      {
+        nomeUsuario:"Tuba",
+        fotoUsuario:"https://picsum.photos/50/50",
+        fotoPost:"https://picsum.photos/200/150"
+      }
+
+    ]
+  }
   render() {
     return (
       <MainContainer>
         <Post
-          nomeUsuario={'Guilherme'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}
+        
+          
         />
          <Post
-          nomeUsuario={'Rick'}
-          fotoUsuario={'https://picsum.photos/50/52'}
-          fotoPost={'https://picsum.photos/200/151'}
+          
         />
          <Post
-          nomeUsuario={'Tuba'}
-          fotoUsuario={'https://picsum.photos/50/55'}
-          fotoPost={'https://picsum.photos/200/153'}
+          
         />
       </MainContainer>
     );
