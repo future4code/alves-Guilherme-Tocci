@@ -4,9 +4,10 @@ import axios from 'axios'
 
 export default class CriaPlaylist extends Component {
     state = {
-        nome : "",
+        nome : "", 
     }
 
+   
     addNome=(e)=>{
         this.setState({nome: e.target.value });
     };
@@ -32,6 +33,7 @@ export default class CriaPlaylist extends Component {
   render() {
     return (
       <div>
+        <button>Suas playlists</button>
         <h1>Criar Playlist</h1>
         <h2>Digite o nome da sua Playlist</h2>
         <input placeholder='Nome'
