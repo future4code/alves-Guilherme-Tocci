@@ -1,19 +1,31 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import axios from "axios";
+import img from "./imagens/lixeira.png";
 
-const imagemMatch = styled.img`
+const ImagemMatch = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 100%;
 `;
+const ClearMatchesButton = styled.button`
+margin: 30px;
+img{width: 60px; 
+  :hover{
+    width: 70px;
+  }
+};
+background-color: #FFFFFF;
+border: none;
+`
 
 function Matchs() {
   const [match, setMatch] = useState([]);
+  const [clear, setClear] = useState(1);
 
   useEffect(() => {
     getMatches();
-  }, []);
+  }, [clear]);
 
   const getMatches = function () {
     axios
@@ -33,6 +45,7 @@ function Matchs() {
         "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/guitocci/clear"
       )
       .then((response) => {
+        setClear(clear + 1);
         console.log(response.data.message);
       })
       .catch((error) => {
@@ -43,17 +56,17 @@ function Matchs() {
   return (
     <div>
       <h2>Matches</h2>
-      <button
+      <ClearMatchesButton
         onClick={() => {
           clearMatches();
         }}
-      >
-        Limpar Matches
-      </button>
+      ><img src={img} alt="lixeira img"></img>
+        
+      </ClearMatchesButton>
       {match.map((match) => {
         return (
           <div>
-            <img src={match.photo} alt={match.photo_alt}></img>
+            <ImagemMatch src={match.photo} alt={match.photo_alt}/>
             <h2>
               {match.name},{match.age}
             </h2>

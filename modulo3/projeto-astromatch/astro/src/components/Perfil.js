@@ -1,12 +1,37 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import img from "./imagens/x.png";
+import img1 from "./imagens/heart.png"
+
 
 const ImagemPerfil = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 100%;
 `;
+const BotaoLike = styled.button`
+border: none;
+inherits: inherit;
+background-color: #FFFFFF;
+img{width:100px; 
+  :hover{
+  width: 110px;
+}
+}
+`;
+const BotaoDislike = styled.button`
+border: none;
+inherits: inherit;
+background-color: #FFFFFF;
+img{width:100px; 
+  :hover{
+  width: 110px;
+}
+}
+
+`;
+
 
 function Perfil() {
   const [perfil, setPerfil] = useState({});
@@ -57,16 +82,18 @@ function Perfil() {
         {perfil.name},{perfil.age}
       </h2>
       <p>{perfil.bio}</p>
-      <button onClick={getProfiletoChoose}>Próximo</button>
-      <button
+      {/* <button onClick={getProfiletoChoose}>Próximo</button> */}
+      <BotaoLike
         onClick={() => {
           choosePerson(perfil.id);
           getProfiletoChoose();
         }}
       >
-        Like
-      </button>
-      <button onClick={getProfiletoChoose}>Dislike</button>
+        <img src={img1} alt = "img like"></img>
+       
+      </BotaoLike>
+      
+      <BotaoDislike onClick={getProfiletoChoose}><img src={img} alt="img dislike"/></BotaoDislike>
     </div>
   );
 }
