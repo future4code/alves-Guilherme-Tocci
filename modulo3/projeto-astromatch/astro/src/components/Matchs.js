@@ -47,6 +47,7 @@ function Matchs() {
       .then((response) => {
         setClear(clear + 1);
         console.log(response.data.message);
+        alert("Seus matches foram resetados");
       })
       .catch((error) => {
         console.log(error);
