@@ -7,6 +7,11 @@ const ImagemMatch = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 100%;
+  @media  (max-width: 800px) {
+    width: 250px;
+    height: 250px;
+    
+  }
 `;
 const ClearMatchesButton = styled.button`
 margin: 30px;
@@ -17,6 +22,9 @@ img{width: 60px;
 };
 background-color: #FFFFFF;
 border: none;
+@media (max-width: 800px) {
+  margin: 0;
+}
 `
 
 function Matchs() {

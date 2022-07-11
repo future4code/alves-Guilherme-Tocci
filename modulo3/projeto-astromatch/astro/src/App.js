@@ -9,10 +9,10 @@ border: 3px solid ;
 border-color: #22B8A8;
 border-style:double;
 border-width:10px;
-min-width:18vw;
-max-width: 18vw;
-margin: 40px;
-
+@media (max-width: 800px){
+  margin: 0;
+  
+}
 `;
 
 export default function App() {

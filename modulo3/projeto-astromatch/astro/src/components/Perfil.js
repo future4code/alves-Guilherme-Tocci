@@ -9,6 +9,11 @@ const ImagemPerfil = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 100%;
+  @media  (max-width: 800px) {
+    width: 250px;
+    height: 250px;
+    
+  }
 `;
 const BotaoLike = styled.button`
 border: none;
@@ -82,7 +87,7 @@ function Perfil() {
         {perfil.name},{perfil.age}
       </h2>
       <p>{perfil.bio}</p>
-      {/* <button onClick={getProfiletoChoose}>Próximo</button> */}
+      
       <BotaoLike
         onClick={() => {
           choosePerson(perfil.id);
