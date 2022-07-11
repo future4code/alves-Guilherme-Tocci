@@ -7,6 +7,7 @@ const ImagemMatch = styled.img`
   width: 350px;
   height: 350px;
   border-radius: 100%;
+  
   @media  (max-width: 800px) {
     width: 250px;
     height: 250px;

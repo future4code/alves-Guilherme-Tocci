@@ -9,8 +9,13 @@ border: 3px solid ;
 border-color: #22B8A8;
 border-style:double;
 border-width:10px;
+min-width: 28vw;
+min-height:90vh;
 @media (max-width: 800px){
   margin: 0;
+  min-width: 95vw;
+min-height:97vh;
+
   
 }
 `;
