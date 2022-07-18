@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import foguete from '../Img/foguete2.mp4';
+import foguete from '../Img/1.mp4';
 import styled from 'styled-components';
+import {GoToLoguin,GoToTrips} from '../routes/Cordenator';
 
 const Main = styled.div`
 width: 100%;
@@ -16,17 +17,14 @@ display: flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
-
 `
-
 const RocketVideo = styled.video`
 text-align: center;
 align-items: center;
 display: flex;
-width: 100vw;
+width: 100%;
 height: 100%;
 object-fit: cover;
-
 `
 const Container = styled.div`
 position: absolute;
@@ -34,18 +32,14 @@ color: white;
 display: flex;
 flex-direction:row;
 `
-const ButtonGoToLoguin = styled.button`
+const BotaoEstilizado = styled.button`
 text-align: center;
 align-items: center;
 display: flex;
-
 `
 
 function HomePage() {
 const navigate = useNavigate()
-const GoToLoguinPage =()=>{
-  navigate("/loguin")
-}
 
 
   return (
@@ -54,8 +48,8 @@ const GoToLoguinPage =()=>{
       <RocketVideo src={foguete} autoPlay loop muted></RocketVideo>
       <h1>HomePage</h1>
       <Container>
-      <ButtonGoToLoguin onClick={GoToLoguinPage}>Loguin</ButtonGoToLoguin>
-      <ButtonGoToLoguin onClick={GoToLoguinPage}>Admin</ButtonGoToLoguin>
+      <BotaoEstilizado onClick={()=>GoToTrips(navigate)}>Viagens</BotaoEstilizado>
+      <BotaoEstilizado onClick={()=>GoToLoguin(navigate)}>Login</BotaoEstilizado>
       </Container>
       </Content>
     </Main>
