@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import img from '../Img/insta.png'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div>
+    <img src={img}></img>
+
+    </div>
   )
 }
 

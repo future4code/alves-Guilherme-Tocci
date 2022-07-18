@@ -16,7 +16,7 @@ const TripCard1 = styled.div`
   align-items: center;
 `;
 const TripCard2 = styled.div`
-background-color: #4F8E93;
+background-color: #995c32;
 color: white;
   text-align: center;
   border: 1px solid black;

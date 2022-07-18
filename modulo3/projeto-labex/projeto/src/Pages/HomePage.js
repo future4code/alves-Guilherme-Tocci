@@ -3,6 +3,24 @@ import { useNavigate } from 'react-router-dom';
 import foguete from '../Img/1.mp4';
 import styled from 'styled-components';
 import {GoToLoguin,GoToTrips} from '../routes/Cordenator';
+import img1 from '../Img/insta.png';
+import img2 from '../Img/twitter.png';
+import img3 from '../Img/f2.png'
+
+
+const FooterHome = styled.div`
+justify-content: center;
+align-items: center;
+text-align: center;
+
+`
+
+const SocialIcons=styled.img`
+width: 5%;
+@media(min-width: 375px) and (max-width:765px){
+width: 15%;
+}
+`
 
 const Main = styled.div`
 width: 100%;
@@ -33,9 +51,17 @@ display: flex;
 flex-direction:row;
 `
 const BotaoEstilizado = styled.button`
+justify-content: center;
 text-align: center;
 align-items: center;
 display: flex;
+border-radius: 50px;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: #995C32;
+    border-color: #995C32;
 `
 
 function HomePage() {
@@ -46,7 +72,11 @@ const navigate = useNavigate()
     <Main>
       <Content >
       <RocketVideo src={foguete} autoPlay loop muted></RocketVideo>
-      <h1>HomePage</h1>
+      <FooterHome>
+      <SocialIcons src={img1}></SocialIcons>
+      <SocialIcons src={img2}></SocialIcons>
+      <SocialIcons src={img3}></SocialIcons>
+      </FooterHome>
       <Container>
       <BotaoEstilizado onClick={()=>GoToTrips(navigate)}>Viagens</BotaoEstilizado>
       <BotaoEstilizado onClick={()=>GoToLoguin(navigate)}>Login</BotaoEstilizado>
