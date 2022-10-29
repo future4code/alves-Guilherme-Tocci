@@ -19,8 +19,14 @@ Axios e fetch
 
 Imagens 
 ![image](https://user-images.githubusercontent.com/104547759/198753908-65f023cb-6b18-4ba5-b0f8-8615fb5ebd0c.png)
+
+
 ![image](https://user-images.githubusercontent.com/104547759/198753921-eec8b808-f19a-4cb7-8b49-fc4cbdff2531.png)
+
+
 ![image](https://user-images.githubusercontent.com/104547759/198753935-c67d30af-b06b-46c1-aace-1b31c3bf119f.png)
+
+
 ![image](https://user-images.githubusercontent.com/104547759/198753955-7b3ea972-1ea5-427e-8662-0ef7bbb21a7b.png)
 
 
