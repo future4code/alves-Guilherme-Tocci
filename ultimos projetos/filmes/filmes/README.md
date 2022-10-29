@@ -3,7 +3,7 @@ TMDB Movies
 Nome do desenvolvedor :
 Guilherme Tocci
 
-Link do Surge:
+Link do Surge: https://deeply-jellyfish.surge.sh/
 
 Como funciona esse projeto :
 
